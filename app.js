@@ -8,7 +8,7 @@ app.use(express.json());
 
 require("./db/conn");
 const router = require("./Routes/router")
-const PORT = 6010;
+const PORT = process.env.PORT || 6010;
 
 app.use(cors());
 app.use(express.json());
